@@ -10,3 +10,5 @@ RUN . ~/.bashrc && nvm install 18 && nvm use 18
 
 # install wasm-pack
 RUN curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
+
+ENTRYPOINT ["bash","--login","-c"]
